@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Great+Vibes&family=Josefin+Sans&family=League+Gothic&family=Lobster&family=Nunito&family=Permanent+Marker&family=Poppins:wght@400;500&family=Roboto&family=Satisfy&display=swap");
+
+
+*{
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    --primary:#6600EB;
+    --second:#C8A4F8;
+    --third:#E0CCFB;
+    --fourth:#C7A3F9;
+    --five:#C9A4F8;
+    --white:#fff;
+    --pink:#E12454;
+
+    --d4:#D4B7F9;
+    --e4:#E0CCFB;
+    --blueper:#002233;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
+.navbar {
+    background: var(--pink);
+}
+.navbar .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 15px;
+  border-bottom: 1px solid var(--primary);
+  font-family: sans-serif;
+  font-family: poppins;
+}
+
+.navbar .container .logo {
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+}
+
+.navbar .container .logo .o {
+  color:yellow;
+}
+
+.navbar .container .logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  background-color: var(--e4);
+  height: 2px;
+}
+
+.navbar .container .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .container .links ul li {
+  margin: 0 10px;
+}
+
+.navbar .container .links ul li a {
+  font-family: poppins;
+  text-transform: capitalize;
+  color:var(--e4);
+}
+
+.navbar .container .links ul li a:hover {
+  color: var(--white);
+}
+.navbar .container .fa-bars{
+    color: var(--fourth);
+    font-size: 24px;
+    display: none;
+}
+/* homeeeeeeeeeeeeeeeeeeeee */
+.home {
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#223a66c7)), url(/img/cullen.jpg) center center/cover; */
+    background:linear-gradient(to top,#230e3fcc,#460e04a1), url(/img/bg.jpg) center center/cover;
+    width:100%;
+    height: 70vh;
+    padding: 30px 10px;
+    text-transform: capitalize;
+    width: 100%;
+    color: #F4F9FC;
+      position: relative;
+      overflow: hidden;
+      /* border-bottom: 1px solid var(--blueper); */
+  }
+  .home .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width:100%;
+      height: 70vh
+ }
+ .home .container h1{
+     text-transform: uppercase;
+     font-size: 85px;
+     font-weight: 900;
+     /* font-family:charm; */
+       font-family:league gothic;
+     letter-spacing: 3px;
+     padding-top: 70px;
+     position: relative;
+ }
+ .home .container h2{
+     text-transform: capitalize;
+     font-size: 45px;
+     font-weight: 600;
+     font-family:charm;
+     letter-spacing: 1px;
+ }
+ .home .container .btn{
+     padding: 10px 14px;
+     font-size: 18px;
+     background:linear-gradient(to right,#6600EB,#E12454);
+     color:var(--white);
+     margin: 10px 0;
+     text-transform: capitalize;
+     /* border-radius: 23px; */
+ }
+ .home .container .lane{
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background: var(--white);
+     /* height: 100px; */
+     justify-content: space-between;
+     align-items: center;
+     color: #002233;
+     border-top-right-radius: 80px;
+     border-top-left-radius: 80px;
+ }
+ .home .container .lane .card{
+     display: flex;
+     gap: 5px;
+     padding: 40px;
+     font-size: 20px;
+ }
+ .home .container .lane .card.active{
+     background-color: var(--primary);
+     color: var(--white);
+ }
+ .home .container .lane .card.active .name{
+     color: var(--white);
+ }
+ .home .container .lane .card .icon{
+     font-size: 22px;
+ }
+ .home .container .lane .card .name{
+     font-size: 18px;
+     font-family: charm;
+     color: #6600EB;
+     font-weight: 500;
+ }
+ .btm{
+     width: 100%;
+     height: calc(100vh - 80vh);
+     background:linear-gradient(to right,#6600EB,#E12454);
+    padding: 40px 8px;
+ }
+ .btm form{
+    display: flex;
+    gap: 10px;
+ }
+ .btm form .div.d1{
+     flex: 3;
+ }
+ .btm form > .div{
+     flex: 1;
+ }
+ .btm form .div label{
+     color:var(--white);
+     font-family: charm;
+     text-transform: capitalize;
+     font-size: 20px;
+ }
+ .btm form .div input{
+     padding: 6px;
+     width: 100%;
+ }
+ .btm form .div input::placeholder{
+     font-family: charm;
+     text-transform: capitalize;
+     color: #002233;
+ }
