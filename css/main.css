@@ -66,14 +66,14 @@ img{
 }
 
 .navbar .container .logo {
-  color: black;
+  color: var(--white);
   font-size: 20px;
   font-weight: 800;
   position: relative;
 }
 
 .navbar .container .logo .o {
-  color:yellow;
+  color:var(--blueper);
 }
 
 .navbar .container .logo::after {
@@ -429,7 +429,7 @@ color: #002233c5;
         cursor: pointer;
         color: #002233;
     }
-    .times{
+    #times{
         display: block;
         color:var(--blueper);
         font-size: 2rem;
