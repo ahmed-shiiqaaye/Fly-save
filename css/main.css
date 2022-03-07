@@ -34,6 +34,7 @@ img{
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    padding: 20px;
     font-family: josefin sans;
 }
 /* this is some easy comment */
@@ -119,7 +120,7 @@ img{
     text-transform: capitalize;
     width: 100%;
     color: #F4F9FC;
-      position: relative;
+    position: relative;
       /* border-bottom: 1px solid var(--blueper); */
   }
   .home .container {
@@ -155,17 +156,86 @@ img{
 
  }
  .home .container .btn{
-     padding: 10px 14px;
-     font-size: 18px;
+     padding: 11px 18px;
+     font-size: 16px;
      background:linear-gradient(to right,#6600EB,#E12454);
      color:var(--white);
      margin: 20px 0;
+     cursor: pointer;
      text-transform: uppercase;
-     /* border-radius: 23px; */
+     border-radius: 23px;
+     transition: all .3s ease-in-out;
  }
- 
+ .home .container .btn:hover{
+     transform: scale(1.02);
+     background: var(--primary);
+ }
 
-
+ /* courses */
+ .container .title {
+     text-align: center;
+     padding-bottom: 50px;
+ }
+.container .title .h1-title{
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--blueper);
+}
+.container .title h3{
+font-size:17px;
+/* font-family: poppins; */
+line-height:1.5;
+color: #002233c5;
+}
+.courses .container{
+    padding: 40px;
+}
+.courses .container .grid{
+    display: grid;
+    gap: 2rem;
+    row-gap: 3rem;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+}
+.courses .container .grid .grid-item{
+    padding: 2rem;
+    background: var(--third);
+}
+.courses .container .grid .grid-item i{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    padding: 1rem;
+    background-color: var(--d4);
+    color: var(--primary);
+}
+.courses .container .grid .grid-item h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--blueper);
+}
+.courses .container .grid .grid-item p{
+    line-height: 1.3;
+}
+.courses .container .grid .grid-item button{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    color:var(--white);
+    background: var(--primary);
+    transition: all  .3s ease-in-out;
+    cursor: pointer;
+}
+.courses .container .grid .grid-item button:hover{
+    background: var(--blueper);
+    color: var(--white);
+}
+/* .courses .container .grid .grid-item:hover i{ */
+    background-color: var(--pink);
+}
 
 
 
