@@ -30,7 +30,9 @@ img{
     height: 100%;
     object-fit: cover;
 }
-
+#times{
+    display: none;
+}
 .container{
     max-width: 1000px;
     margin: 0 auto;
@@ -147,6 +149,7 @@ img{
      font-size: 20px;
      font-weight: 600;
      font-family:charm;
+     text-align: center;
      letter-spacing: 1px;
      margin-bottom: 10px;
  }
@@ -202,6 +205,7 @@ color: #002233c5;
 .courses .container .grid .grid-item{
     padding: 2rem;
     background: var(--third);
+    box-shadow: 0 0 8px var(--third);
 }
 .courses .container .grid .grid-item i{
     font-size: 1.6rem;
@@ -233,9 +237,181 @@ color: #002233c5;
     background: var(--blueper);
     color: var(--white);
 }
-/* .courses .container .grid .grid-item:hover i{ */
-    background-color: var(--pink);
+/* years of experience */
+.experience{
+    background-color: var(--e4);
 }
+.experience .container{
+    padding: 50px 20px;
+}
+.experience .container .flex{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    /* background: #000; */
+    padding: 20px 60px 20px 20px;
+}
+.experience .container .flex .img{
+    width: 100%;
+   max-height: 24rem;
+    overflow: hidden;
+    position: relative;
+}
+.experience .container .flex .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.experience .container .flex .text .title{
+    text-align: left;
+    /* font-size: 40px; */
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 0;
+    font-family: poppins;
+    color: rgba(0,20,250,.4);
+}
+.experience .container .flex .text h3{
+    margin-top: -30px;
+    padding-bottom: 10px;
+    color: var(--pink);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.experience .container .flex .text h2{
+    font-size: 25px;
+    line-height: 1.4;
+    font-family: poppins;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.experience .container .flex .text button{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    color:var(--white);
+    background: var(--primary);
+    transition: all  .3s ease-in-out;
+    cursor: pointer;  
+}
+.experience .container .flex .text button:hover{
+    transform: scale(1.02);
+    background: var(--blueper);
+}
+/* pricing */
+.pricing .container .grid .grid-item{
+    border-radius: 10px;
+}
+.pricing .container .grid .grid-item .header{
+    padding-bottom: 20px;
+    font-family: nunito;
+}
+.pricing .container .grid .grid-item .header .class{
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.pricing .container .grid .grid-item .header .category{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.pricing .container .grid .grid-item .header {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+.pricing .container .grid .grid-item .header .sign{
+    font-size: 14px;
+    margin-left: -9px;
+    position: absolute;
+    color: rgba(100, 100, 100,.8)
+}
+.pricing .container .grid .grid-item .header .mo{
+    font-size: 14px;
+    color: rgba(100, 100, 100,.8)
+
+}
+.pricing .container .grid .grid-item .body ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+}
+.pricing .container .grid .grid-item .body ul li .icon{
+    border-radius: 100%;
+    font-size: 15px;
+    padding:.6rem;
+    margin-right: 10px;
+}
+.pricing .container .grid .grid-item .body ul li .icon.timess{
+    color: var(--pink);
+    padding:.6rem .8rem;
+}
+.pricing .container .grid .grid-item .body ul li .name.cancel{
+    text-decoration: line-through;
+    color: rgba(100, 100, 100,.8);
+}
+.pricing .container .grid .grid-item .header .line{
+    height: 1px;
+    width: 100%;
+    background: var(--d4);
+    margin-bottom: 15px;
+}
+/* done */
+.done{
+    background:linear-gradient(to bottom,#e12453e3,#002233e5), url(/img/shana-van-roosbroek-kz5OqFT5y9o-unsplash.jpg) center center/cover;
+
+    /* background: var(--pink); */
+}
+.done .container .grid{
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+
+}
+.done .container .title h1{
+    color:var(--white);
+}
+.done .container .title h3{
+    color: var(--white);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -253,19 +429,30 @@ color: #002233c5;
         cursor: pointer;
         color: #002233;
     }
+    .times{
+        display: block;
+        color:var(--blueper);
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
     .navbar .container .links{
+        padding-top: 15%;
         position: fixed;
-        top: 42px;
+        top: 0;
         background: var(--e4);
-        width: 100%;
-        height: auto;
+        width: 60%;
+        height: 100vh;
         left: 0;
         z-index: 10;
-        transform: translateY(-120%);
+        transform: translateX(-120%);
         transition:all .4s ease-in-out;
+        z-index: 200000;
     }
     .navbar .container .links.active{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     .navbar .container .links ul{
         display: inline-block;
@@ -292,6 +479,14 @@ color: #002233c5;
     .home .container .lane .card{
         padding:10px;
     }
+    .experience .container .flex{
+    flex-direction: column;
+    }
+    .experience .container .flex .img{
+        width: 100%;
+        height: 250px;
+    }
+      
 }
 @media(max-width:720px){
     .home .container h1{
@@ -307,5 +502,25 @@ color: #002233c5;
     }
     .home .container .lane .card .name{
         font-size: 14px;
+    }
+  
+}
+@media (max-width:400px) {
+    /* .home{
+        height:75vh;
+    } */
+    .container .title .h1-title{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .home .container .text h2{
+        font-size: 20px;
+    }
+    .done .container .title{
+        text-align: left;
+    }
+    .done .container .title h1{
+        font-size: 24px;
+        text-align: left;
     }
 }
