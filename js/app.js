@@ -7,3 +7,14 @@ menu.addEventListener('click',function(){
 times.addEventListener('click',function(){
     links.classList.remove('active')
 })
+
+let signIn = document.querySelectorAll('.sign-in');
+let popUp = document.querySelector('.pop');
+console.log(popUp)
+signIn.forEach((sing,i) =>{
+    console.log(sing,i)
+    sing.addEventListener('click',(e)=>{
+        popUp.classList.add('active')
+        console.log(e)
+    })
+})

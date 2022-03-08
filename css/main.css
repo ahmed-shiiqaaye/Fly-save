@@ -180,7 +180,7 @@ img{
      text-transform: uppercase;
      transition: all .3s ease-in-out;
  }
- .home .container .btn:hover{
+ .home .container .btns:hover{
      transform: scale(1.02);
      background: var(--primary);
  }
@@ -350,6 +350,7 @@ color: #002233c5;
     display: block;
     width: 100%;
     border-radius: 5px;
+    cursor: pointer;
 }
 .pricing .container .grid .grid-item .body ul li{
     display: flex;
@@ -536,15 +537,17 @@ color: #002233c5;
 
 /* pop-up */
 
-.pop{
-    position: absolute;
+/* .pop{
+    position: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
     background: var(--d4);
-    z-index: 20;
+    z-index: 20000;
     opacity: 0;
 }
 .pop.active{
@@ -612,7 +615,7 @@ color: #002233c5;
 .pop form button:hover{
     background: var(--blueper);
     color: var(--white);   
-}
+} 
 
 
 
@@ -642,7 +645,7 @@ color: #002233c5;
         cursor: pointer;
         color: #002233;
     }
-    #times{
+    /* #times{
         display: block;
         color:var(--blueper);
         font-size: 2rem;
@@ -650,22 +653,22 @@ color: #002233c5;
         position: absolute;
         right: 40px;
         top: 40px;
-    }
+    } */
     .navbar .container .links{
-        padding-top: 15%;
+        /* padding-top: 15%; */
         position: fixed;
-        top: 0;
+        top: 45px;
         background: var(--e4);
-        width: 60%;
-        height: 100vh;
+        width: 100%;
+        height: 60vh;
         left: 0;
         z-index: 10;
-        transform: translateX(-120%);
         transition:all .4s ease-in-out;
         z-index: 200000;
+        overflow: hidden;
     }
     .navbar .container .links.active{
-        transform: translateX(0);
+        height: 0;
     }
     .navbar .container .links ul{
         display: inline-block;
@@ -674,7 +677,6 @@ color: #002233c5;
     }
     .navbar .container .links ul li{
         padding: 10px;
-        /* border-bottom: 1px solid var(--fourth); */
         border-left: 4px solid var(--pink);
         margin-bottom: 5px;
     }
