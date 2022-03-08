@@ -124,7 +124,7 @@ img{
     color: #F4F9FC;
     position: relative;
       /* border-bottom: 1px solid var(--blueper); */
-  }
+}
   .home .container {
       display: flex;
       flex-direction: column;
