@@ -534,11 +534,85 @@ color: #002233c5;
     transform: scale(1.5);
 }
 
+/* pop-up */
 
-
-
-
-
+.pop{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--d4);
+    z-index: 20;
+    opacity: 0;
+}
+.pop.active{
+    opacity: 1;
+}
+.pop form{ 
+    background: var(--e4);
+    padding: 20px 20px;
+    width: 500px;
+    /* width: 100%; */
+    color: var(--e4);
+}
+.pop form h3{
+    font-size: 30px;
+    color: var(--blueper);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.pop form .both{
+    margin: 10px 0;
+    color: #002233;
+    font-family: sans-serif;
+}
+.pop form .both label{
+    text-transform: capitalize;
+    color: var(--blueper);
+    margin-bottom: 5px;
+    font-family: charm;
+}
+.pop form .both input{
+    padding: 8px;
+    background: transparent;
+    width: 100%;
+    border-bottom: 1px solid var(--blueper);
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.pop form .both input::placeholder{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color:#604b7a77;
+    display: none;
+}
+.pop form .both.have{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+}
+.pop form .both.have span{
+    clear: var(--blueper);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.pop form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    color:var(--white);
+    background: var(--primary);
+    transition: all  .3s ease-in-out;
+    cursor: pointer;  
+}
+.pop form button:hover{
+    background: var(--blueper);
+    color: var(--white);   
+}
 
 
 
