@@ -158,15 +158,26 @@ img{
     letter-spacing: 1px;
 
  }
- .home .container .btn{
+ .btn{
+    padding: 11px 18px;
+    font-size: 16px;
+    background:linear-gradient(to right,#6600EB,#E12454);
+    color:var(--white);
+    margin: 20px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 23px;
+    transition: all .3s ease-in-out;
+ }
+ .home .container .btns{
      padding: 11px 18px;
      font-size: 16px;
-     background:linear-gradient(to right,#6600EB,#E12454);
+     /* background:linear-gradient(to right,#6600EB,#E12454); */
      color:var(--white);
+     background: var(--primary);
      margin: 20px 0;
      cursor: pointer;
      text-transform: uppercase;
-     border-radius: 23px;
      transition: all .3s ease-in-out;
  }
  .home .container .btn:hover{
@@ -334,6 +345,11 @@ color: #002233c5;
     color: rgba(100, 100, 100,.8)
 
 }
+.pricing .container .grid .grid-item .body button{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
 .pricing .container .grid .grid-item .body ul li{
     display: flex;
     justify-content: flex-start;
@@ -378,14 +394,67 @@ color: #002233c5;
     font-weight: normal;
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
+/* entroll */
+.entroll{
+    background: var(--e4);
+    padding: 50px 0;
+}
+.entroll .container .title .h1-title{
+    color: var(--blueper);
+}
+.entroll .container .title h3{
+    color: var(--blueper);
+}
+.entroll .container .title h3 span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--pink);
+}
+.entroll .container .flex{
+    display: flex;
+    gap: 20px;
+}
+.entroll .container .flex > div{
+    flex: 1;
+}
+.entroll .container .flex ul li{
+    display: flex;
+     justify-content: flex-start;
+    align-items: center;
+ text-transform: capitalize;
+ margin-bottom: 5px;
+}
+.entroll .container .flex ul li .icon{
+    /* border-radius: 100%; */
+    font-size: 15px;
+    padding:.5rem;
+    margin-right: 15px;
+    padding: 1rem;
+    background-color: var(--blueper);
+    color: var(--d4);
+}
+.entroll .container .flex ul li .name{
+    font-size: 20px;
+}
+.entroll .container .flex .image{
+    height: 18rem;
+    overflow: hidden;
+}
+.entroll .container .flex .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.entroll .container .flex .btn{
+    border-radius: 0;
+    background: var(--primary);
+    text-transform: capitalize;
+}
+.entroll .container .flex .btn:hover{
+    background: var(--blueper);
+    color: var(--white);
+}
 
 
 
@@ -485,6 +554,10 @@ color: #002233c5;
     .experience .container .flex .img{
         width: 100%;
         height: 250px;
+    }
+    .entroll .container .flex{
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
       
 }
