@@ -401,7 +401,7 @@ color: #002233c5;
     padding: 50px 0;
 }
 .entroll .container .title .h1-title{
-    color: var(--white);
+    color: var(--blueper);
 }
 .entroll .container .title h3{
     color: var(--blueper);
@@ -527,8 +527,12 @@ color: #002233c5;
 .footer .container .bottom .links a{
     color: var(--e4);
     font-size: 18px;
+    margin: 10px;
+    transition: all .3s ease-in-out;
 }
-
+.footer .container .bottom .links a:hover{
+    transform: scale(1.5);
+}
 
 
 
