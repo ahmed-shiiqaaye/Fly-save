@@ -255,24 +255,23 @@ color: #002233c5;
 .experience .container{
     padding: 50px 20px;
 }
-.experience .container .flex{
+/* .experience .container .flex{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     gap: 30px;
-    /* background: #000; */
     padding: 20px 60px 20px 20px;
-}
-.experience .container .flex .img{
-    width: 100%;
-   max-height: 24rem;
+} */
+/* .experience .container .flex .img{
+    /* width: 0%; */
+   /* max-height: 24rem;
     overflow: hidden;
     position: relative;
-}
-.experience .container .flex .img img{
+} */ */
+/* .experience .container .flex .img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .experience .container .flex .text .title{
     text-align: left;
     /* font-size: 40px; */
@@ -677,14 +676,46 @@ color: #002233c5;
 }
 .teachers .container .slider .links a:hover{
     transition: all .2s ease-in-out;
-    color: var(--e4);
+    color: var(--blueper);
     transform: scale(1.5);
 }
 .teachers .container .slider .para{
     line-height: 1.6;
     font-size: 18px;
 }
-
+/* STUDENTS */
+.students{
+    background: var(--pink);
+}
+.students .container{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.students .container .slider {
+    background: transparent;
+}
+.students .container .slider .links{
+    clear: var(--primary);
+    height: auto;
+}
+.students .container .slider .text .namess{
+    color: var(--primary);
+}
+.students .container .slider .text .jop{
+    color: var(--d4);
+}
+.students .container .slider .links a:hover{
+    transition: all .2s ease-in-out;
+    color: var(--e4);
+    transform: scale(1.1);
+}
+.students .container .slider .text .links a{
+    color: var(--blueper);
+}
 
 
 
