@@ -622,17 +622,17 @@ color: #002233c5;
     background: var(--five);
 }
 .teachers .container{
-    /* overflow-x: scroll; */
+    padding: 70px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(214, 101, 101);
 }
 .teachers .container .slider{
     padding: 20px;
-    background: var(--blueper);
-    color: var(--white);
-    width: 70%;
+    background: var(--e4);
+    color: var(--blueper);
+    width: 100%;
+    max-width: 400px;
     position: relative;
 }
 .teachers .container .slider img{
@@ -671,6 +671,18 @@ color: #002233c5;
     position: absolute;
     top:0%;
     right: 10px;
+}
+.teachers .container .slider .links{
+    height: 5rem;
+}
+.teachers .container .slider .links a:hover{
+    transition: all .2s ease-in-out;
+    color: var(--e4);
+    transform: scale(1.5);
+}
+.teachers .container .slider .para{
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 

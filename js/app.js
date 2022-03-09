@@ -22,19 +22,19 @@ let teachersArray = [
      name:"Dr. Taariq Osman",
     jop:"health consaltant",
     img:"./img/ben-kolde-bs2Ba7t69mM-unsplash.jpg",
-    para:"i'm psychological doctor and leader mental treatment group, we helped many petients mentality and now they are healthy 100%.we are ready to help you."
+    para:"I'm psychological doctor and leader mental treatment group, we helped many petients mentality and now they are healthy 100%.we are ready to help you."
     },
     {
     name:"Prof Malik",
     jop:"software engineer",
     img:"./img/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg",
-    para:"i'm psychological doctor and leader mental treatment group, we helped many petients mentality and now they are healthy 100%.we are ready to help you."
+    para:"Moha is me.i am tutor of thousands of students in this hana akademi. we produce thousands of developers each year. welcome the world of technologies,developer and programmers.jion us learn how to code."
     },
     {
     name:"prof Hafsa mo'al",
     jop:"health consaltant",
     img:"./img/doctor-mako-YeTNPJQW8Yo-unsplash.jpg",
-    para:"i'm psychological doctor and leader mental treatment group, we helped many petients mentality and now they are healthy 100%.we are ready to help you."
+    para:"I'm Hafsa. ceo of HANANdigital marketing group (HDMG) we offer the products from the componies we are patner to the costumers and the selling shoppies.learn today earn tomorrow" 
     }
 ]
 let counter = 1;
