@@ -762,7 +762,7 @@ color: #002233c5;
 .contact .container form .both label{
     font-size: 18px;
     text-transform: capitalize;
-    margin-bottom: 12px;
+    margin-bottom: 17px;
 }
 .contact .container form .both input{
     border: 1px solid var(--blueper);
