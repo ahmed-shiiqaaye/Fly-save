@@ -728,10 +728,58 @@ color: #002233c5;
 .students .container .slider .text .links a{
     color: var(--blueper);
 }
-
-
-
-
+/* contact */
+.contact .h1-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 30px 0 3px;
+    position: relative;
+}
+.contact .h1-title::after{
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    background: var(--blueper);
+}
+.contact .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .container form{
+    padding: 20px;
+    width: 400px;
+    position: relative;
+}
+.contact .container form .both{
+    margin: 20px 0;
+}
+.contact .container form .both label{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.contact .container form .both input{
+    border: 1px solid var(--blueper);
+    padding: 8px;
+    width: 100%;
+}
+.contact .container form .both input::placeholder{
+    color: rgba(100, 100, 100,.8);
+    text-transform: capitalize;
+}
+.contact .container form  button{
+    padding: 10px;
+    font-size: 17px;
+    width: 100%;
+    background: var(--e4);
+    text-transform: capitalize;
+}
 
 
 
