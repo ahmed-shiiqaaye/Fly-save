@@ -558,8 +558,8 @@ color: #002233c5;
     padding: 20px 20px;
     width: 500px;
     /* width: 100%; */
-    color: var(--e4);
-}
+    /* color: var(--e4);
+} */
 .pop form h3{
     font-size: 30px;
     color: var(--blueper);
@@ -617,7 +617,61 @@ color: #002233c5;
     color: var(--white);   
 } 
 
-
+/* teachers */
+.teachers{
+    background: var(--five);
+}
+.teachers .container{
+    /* overflow-x: scroll; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(214, 101, 101);
+}
+.teachers .container .slider{
+    padding: 20px;
+    background: var(--blueper);
+    color: var(--white);
+    width: 70%;
+    position: relative;
+}
+.teachers .container .slider img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 70%;
+    border: 2px solid var(--pink);
+}
+.teachers .container .slider .text .namess{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.teachers .container .slider .text .jop{
+    font-weight: bold;
+    text-transform: capitalize;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    color:var(--pink);
+    font-weight: normal;
+}
+.teachers .container .slider .text .links a{
+    padding: 10px;
+    display: inline-block;
+    color: var(--pink);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.teachers .container .btn{
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+    background: var(--primary);
+    border-radius: 0;
+    position: absolute;
+    top:0%;
+    right: 10px;
+}
 
 
 
@@ -657,10 +711,10 @@ color: #002233c5;
     .navbar .container .links{
         /* padding-top: 15%; */
         position: fixed;
-        top: 45px;
+        top: 0;
         background: var(--e4);
-        width: 100%;
-        height: 60vh;
+        width: 0%;
+        height:100vh;
         left: 0;
         z-index: 10;
         transition:all .4s ease-in-out;
@@ -668,7 +722,7 @@ color: #002233c5;
         overflow: hidden;
     }
     .navbar .container .links.active{
-        height: 0;
+        /* width: 50%; */
     }
     .navbar .container .links ul{
         display: inline-block;
