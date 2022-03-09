@@ -71,11 +71,23 @@ img{
   font-weight: 800;
   position: relative;
 }
-
+.navbar .container .logo .o.white{
+    color: var(--pink);
+}
 .navbar .container .logo .o {
   color:var(--blueper);
 }
-
+.navbar.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    z-index: 200;
+    background: var(--blueper);
+    border-bottom: 1px solid var(--third);
+}
 .navbar .container .logo::after {
   content: '';
   position: absolute;

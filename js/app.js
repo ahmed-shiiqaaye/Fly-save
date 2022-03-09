@@ -60,3 +60,22 @@ nextBtn.addEventListener('click',function(){
     }
     showperson(counter)
 })
+
+
+let navbar = document.querySelector('.navbar');
+let logo = document.querySelector('.logo .o');
+
+
+window.addEventListener('scroll',function(){
+    let navh = navbar.getBoundingClientRect().height;
+    let scrolH = window.pageYOffset;
+    if(scrolH > navh){
+        navbar.classList.add('fixed-nav')
+        logo.classList.add('white')
+    }else{
+        navbar.classList.remove('fixed-nav')
+        logo.classList.remove('white')
+
+    }
+    console.log(scrolH)
+})
