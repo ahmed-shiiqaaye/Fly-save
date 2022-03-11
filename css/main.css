@@ -826,7 +826,7 @@ color: #002233c5;
         overflow: hidden;
     }
     .navbar .container .links.active{
-        /* width: 50%; */
+        width: 50%;
     }
     .navbar .container .links ul{
         display: inline-block;
